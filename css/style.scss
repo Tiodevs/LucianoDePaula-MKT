@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$verde-escuro: #18CFA4;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    overflow: hidden;
+    background-color: #000000;
+    background-image: url(../src/home/Plano\ de\ fundo\ Wireframe\ site\ \(548\ x\ 425\ px\)\ 1.png);
+    background-size:cover;
+    background-position: center;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 60px 10vw;
+    
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            li{
+                margin: 20px;
+            }
+            svg {
+                width: 40px;
+            }
+        }
+    }
+
+    div{
+        color: #FFF;
+        width: 100vw;
+        height: calc(100vh - 230px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        span{
+            color: $verde-escuro;
+        }
+        h1{
+            font-size: 3vw;
+            margin-bottom: 60px;
+        }
+
+        p{
+            font-size: 1.2vw;
+            margin-bottom: 60px;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.2vw;
+            padding: 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            background-color: $verde-escuro;
+        }
+    }
+}
